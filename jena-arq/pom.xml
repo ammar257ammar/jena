@@ -74,9 +74,9 @@
     </dependency>
 
     <dependency>
-      <groupId>com.github.jsonld-java.jsonld-java</groupId>
-      <artifactId>pom</artifactId>
-      <version>d624053</version>
+        <groupId>com.github.jsonld-java</groupId>
+        <artifactId>jsonld-java</artifactId>
+        <version>d624053</version>
     </dependency>
 
     <!-- See parent POM. Our choice of version here. -->

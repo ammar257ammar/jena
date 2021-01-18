@@ -67,8 +67,8 @@
          and use that or later.
     -->
     <ver.jsonldjava>0.12.5</ver.jsonldjava>
-    <ver.jackson>2.9.10</ver.jackson>
-    <ver.jackson-databind>2.9.10</ver.jackson-databind>
+    <ver.jackson>2.11.2</ver.jackson>
+    <ver.jackson-databind>2.11.2</ver.jackson-databind>
 
     <ver.commonsio>2.6</ver.commonsio>
     <ver.commonscli>1.4</ver.commonscli>
@@ -328,17 +328,6 @@
       </dependency>
 
       <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-core</artifactId>
-        <version>${ver.jackson}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>${ver.jackson-databind}</version>
-      </dependency>
-
-      <dependency>
         <groupId>org.apache.thrift</groupId>
         <artifactId>libthrift</artifactId>
         <version>${ver.libthrift}</version>
@@ -391,15 +380,6 @@
         <artifactId>jsonld-java</artifactId>
         <version>d624053</version>
         <exclusions>
-
-          <exclusion>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-          </exclusion>
 
           <exclusion>
             <groupId>commons-logging</groupId>
