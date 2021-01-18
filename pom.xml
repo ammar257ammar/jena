@@ -641,9 +641,6 @@
                   <message>No SNAPSHOT dependencies are allowed!</message>
                   <onlyWhenRelease>true</onlyWhenRelease>
                 </requireReleaseDeps>
-                <requireMavenVersion>
-                  <version>3.5.0</version>
-                </requireMavenVersion>
               </rules>
               <fail>true</fail>
               <failFast>false</failFast>
