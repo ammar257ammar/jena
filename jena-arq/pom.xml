@@ -21,7 +21,7 @@
   <artifactId>jena-arq</artifactId>
   <packaging>jar</packaging>
   <name>Apache Jena - ARQ (SPARQL 1.1 Query Engine)</name>
-  <version>3.13.1</version>
+  <version>3.13.1</version>  
 
   <parent>
     <groupId>org.apache.jena</groupId>
