@@ -485,8 +485,10 @@ public final class TokenizerText implements Tokenizer
                 case TAB:
                     error("Bad character in IRI (Tab character): <%s[tab]...>", stringBuilder.toString()); return null;
                 case '{': case '}': case '"': case '|': case '^': case '`' :
-                    if ( ! VeryVeryLaxIRI )
-                        warning("Illegal character in IRI (codepoint 0x%02X, '%c'): <%s[%c]...>", ch, (char)ch, stringBuilder.toString(), (char)ch);
+                    if ( ! VeryVeryLaxIRI ){
+                        //warning("Illegal character in IRI (codepoint 0x%02X, '%c'): <%s[%c]...>", ch, (char)ch, stringBuilder.toString(), (char)ch);
+                        ch=0;
+                    }
                     break;
                 case SPC:
                     if ( ! AllowSpacesInIRI )
