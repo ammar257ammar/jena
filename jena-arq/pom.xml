@@ -30,6 +30,13 @@
     <relativePath>..</relativePath>
   </parent>
 
+  	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
   <description>ARQ is a SPARQL 1.1 query engine for Apache Jena</description>
 
   <properties>
@@ -74,6 +81,22 @@
         <version>d624053</version>
     </dependency>
 
+	<dependency>
+        <groupId>org.apache.thrift</groupId>
+        <artifactId>libthrift</artifactId>
+        <version>0.12.0</version>
+        <exclusions>
+          <!-- Use whatever version Jena is using -->
+          <exclusion>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
     <!--
          Intercept any uses of Jakarta Commons Logging
          e.g. Apache Common HTTP client.
